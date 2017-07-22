@@ -1,0 +1,180 @@
+﻿{% load staticfiles %}
+<!--<!DOCTYPE HTML>-->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>炉石传说卡组</title>		
+		<link rel="stylesheet" href="{% static 'hearthstone/index.css' %}"/>
+		<script src="{% static 'hearthstone/jquery-3.1.1.js' %}"></script>
+		<script src="{% static 'hearthstone/index.js' %}"></script>
+	</head>
+	<body>
+		<nav id="nav">
+			<ul>
+				<li id="a1"><a><img src="{% static 'hearthstone/images/dz.jpg' %}"/></a>
+					<ul id="b1">
+						<!--<li>奇迹贼</li>-->
+						<!--<li>爆牌贼</li>-->
+						<!--<li>青玉贼</li>-->
+						<!--<li>蓝龙贼</li>-->
+						<!--<li>刀油贼</li>-->
+						<!--<li>剽窃贼</li>-->
+						<!--<li>克苏恩贼</li>-->
+						<!--<li>任务达人奇迹贼</li>-->
+						<!--<li>海盗奇迹贼</li>-->
+						<!--<li>夜幕奇袭帕奇斯贼</li>-->
+						<!--<li>鱼人奇迹贼</li>-->
+						{% for post in post_list_4 %}
+							<li ><a href="{{ post.get_absolute_url }}">{{post.ka_name}}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li id="a2"><a><img src="{% static 'hearthstone/images/sm.jpg' %}"/></a>
+					<ul id="b2">
+						<!--<li>中速萨</li>-->
+						<!--<li>快攻萨</li>-->
+						<!--<li>青玉萨</li>-->
+						<!--<li>青海萨</li>-->
+						<!--<li>控制萨</li>-->
+						<!--<li>进化萨</li>-->
+						<!--<li>鱼人萨</li>-->
+						<!--<li>嗜血萨</li>-->
+						<!--<li>蓝龙萨</li>-->
+						{% for post in post_list_2 %}
+							<li ><a href="{{ post.get_absolute_url }}">{{post.ka_name}}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li><a><img src="{% static 'hearthstone/images/zs.jpg' %}"/></a>
+					<ul>
+						<!--<li>防战</li>-->
+						<!--<li>海盗战</li>-->
+						<!--<li>奴隶战</li>-->
+						<!--<li>墙战</li>-->
+						<!--<li>龙战</li>-->
+						<!--<li>海龙战</li>-->
+						<!--<li>瓦王战</li>-->
+						<!--<li>克苏恩战</li>-->
+						<!--<li>污手战</li>-->
+						<!--<li>狼人战</li>-->
+						<!--<li>滚石战</li>-->
+						<!--<li>宇宙战</li>-->
+						<!--<li>地雷战</li>-->
+						{% for post in post_list_7 %}
+							<li ><a href="{{ post.get_absolute_url }}">{{post.ka_name}}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li><a><img src="{% static 'hearthstone/images/fs.jpg' %}"/></a>
+					<ul>
+						<!--<li>冰法</li>-->
+						<!--<li>宇宙法</li>-->
+						<!--<li>奥秘法</li>-->
+						<!--<li>随从法</li>-->
+						<!--<li>机械法</li>-->
+						<!--<li>管理员法</li>-->
+						<!--<li>无限火球法</li>-->
+						<!--<li>随机法</li>-->
+						<!--<li>随机法</li>-->
+						{% for post in post_list_6 %}
+							<li ><a href="{{ post.get_absolute_url }}">{{post.ka_name}}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li><a><img src="{% static 'hearthstone/images/lr.jpg' %}"/></a>
+					<ul>
+						<!--<li>中速猎</li>-->
+						<!--<li>T7猎</li>-->
+						<!--<li>奥秘猎</li>-->
+						<!--<li>污手猎</li>-->
+						<!--<li>亡语猎</li>-->
+						<!--<li>变速猎</li>-->
+						<!--<li>沙陀猎</li>-->
+						<!--<li>上膛猎</li>-->
+						<!--<li>极巴猎</li>-->
+						<!--<li>假死猎</li>-->
+						{% for post in post_list_1 %}
+							<li ><a href="{{ post.get_absolute_url }}">{{post.ka_name}}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li><a><img src="{% static 'hearthstone/images/dly.jpg' %}"/></a>
+					<ul>
+						<!--<li>咆哮德</li>-->
+						<!--<li>青玉德</li>-->
+						<!--<li>库恩德</li>-->
+						<!--<li>蓝龙德</li>-->
+						<!--<li>超生德</li>-->
+						<!--<li>克苏恩德</li>-->
+						<!--<li>野兽德</li>-->
+						<!--<li>缺德</li>-->
+						<!--<li>跳费德</li>-->
+						<!--<li>星界德</li>-->
+						<!--<li>导演德</li>-->
+						<!--<li>魔能德</li>-->
+						{% for post in post_list_8 %}
+							<li ><a href="{{ post.get_absolute_url }}">{{post.ka_name}}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li><a><img src="{% static 'hearthstone/images/sqs.jpg' %}"/></a>
+					<ul>
+						<!--<li>死鱼骑</li>-->
+						<!--<li>神恩骑</li>-->
+						<!--<li>佛主骑</li>-->
+						<!--<li>中速骑</li>-->
+						<!--<li>鱼人骑</li>-->
+						<!--<li>龙骑</li>-->
+						<!--<li>鱼龙兽骑</li>-->
+						<!--<li>奶骑</li>-->
+						<!--<li>元气骑</li>-->
+						{% for post in post_list_5 %}
+							<li ><a href="{{ post.get_absolute_url }}">{{post.ka_name}}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li><a><img src="{% static 'hearthstone/images/ms.jpg' %}"/></a>
+					<ul>
+						<!--<li>龙牧</li>-->
+						<!--<li>脏牧</li>-->
+						<!--<li>94牧</li>-->
+						<!--<li>环牧</li>-->
+						<!--<li>宇宙牧</li>-->
+						<!--<li>心火牧</li>-->
+						<!--<li>一刀牧</li>-->
+						<!--<li>复活牧</li>-->
+						<!--<li>净化牧</li>-->
+						<!--<li>克苏恩牧</li>-->
+						<!--<li>复活牧</li>-->
+						{% for post in post_list_9 %}
+							<li ><a href="{{ post.get_absolute_url }}">{{post.ka_name}}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				<li><a><img src="{% static 'hearthstone/images/ss.jpg' %}"/></a>
+					<ul>
+						<!--<li>动物园</li>-->
+						<!--<li>宇宙术</li>-->
+						<!--<li>恶魔术</li>-->
+						<!--<li>手牌术</li>-->
+						<!--<li>大王术</li>-->
+						<!--<li>弃牌术</li>-->
+						<!--<li>耳光术</li>-->
+						<!--<li>小马术</li>-->
+						<!--<li>小明术</li>-->
+						<!--<li>时光术</li>-->
+						{% for post in post_list_3 %}
+							<li ><a href="{{ post.get_absolute_url }}">{{post.ka_name}}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</body>
+<html>
+
+
+
+
+
+

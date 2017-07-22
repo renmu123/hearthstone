@@ -1,0 +1,45 @@
+body{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+
+#nav ul li a img{
+	height:100px;
+	width:100px;
+}
+#nav ul li{
+	float:left;
+	margin:10px 15px;
+	width:102px;
+}
+#nav ul{
+	width:1200px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#nav ul li ul{
+	width:100px;
+	overflow:hidden;
+	border:1px solid gray;
+	border-radius:10px;
+	padding-left:0;
+}
+#nav ul li ul li{
+	float:right;
+	width:80px;
+	margin:5px auto;
+}
+
+
+
+
+
+
+
